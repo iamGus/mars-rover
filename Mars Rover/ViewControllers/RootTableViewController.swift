@@ -14,11 +14,16 @@ class RootTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.register(RoverPhotoCell.self, forCellReuseIdentifier: RoverPhotoCell.reuseIdentifier)
         refreshContent()
     }
     
     // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        80
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -29,11 +34,12 @@ class RootTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RoverCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RoverPhotoCell.reuseIdentifier, for: indexPath) as? RoverPhotoCell else {
+            return UITableViewCell()
+        }
         
-        if let rover = model?.roverImage(at: indexPath.row){
-            cell.textLabel?.text = rover.camera.fullName
-            cell.detailTextLabel?.text = rover.earthDate
+        if let rover = model?.roverImage(at: indexPath.row) {
+            cell.configure(with: rover)
         }
         
         return cell
