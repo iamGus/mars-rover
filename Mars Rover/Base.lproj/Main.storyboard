@@ -4,11 +4,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Mars Rover Photos-->
         <scene sceneID="zie-5j-XvD">
             <objects>
                 <tableViewController id="99X-hR-cfD" customClass="RootTableViewController" customModule="Mars_Rover" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,11 +49,44 @@
                             <outlet property="delegate" destination="99X-hR-cfD" id="oG4-SD-4g0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Yn4-X8-eAU"/>
+                    <navigationItem key="navigationItem" title="Mars Rover Photos" id="Yn4-X8-eAU"/>
+                    <connections>
+                        <segue destination="i4J-JN-QaP" kind="show" identifier="FullPhotoSegue" id="fhl-Ih-7oo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2r-uw-SW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-426" y="-93"/>
+        </scene>
+        <!--Full Photo View Controller-->
+        <scene sceneID="hcQ-HV-Fyt">
+            <objects>
+                <viewController id="i4J-JN-QaP" customClass="FullPhotoViewController" customModule="Mars_Rover" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VwL-pb-jhj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F7b-bf-mtV">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ang-8d-Oup"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F7b-bf-mtV" firstAttribute="top" secondItem="Ang-8d-Oup" secondAttribute="top" id="8Gc-du-xj6"/>
+                            <constraint firstItem="F7b-bf-mtV" firstAttribute="leading" secondItem="Ang-8d-Oup" secondAttribute="leading" id="SWS-Gy-SBa"/>
+                            <constraint firstAttribute="bottom" secondItem="F7b-bf-mtV" secondAttribute="bottom" id="ian-uJ-Y7w"/>
+                            <constraint firstItem="F7b-bf-mtV" firstAttribute="trailing" secondItem="Ang-8d-Oup" secondAttribute="trailing" id="wAZ-tv-SbH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YC1-9S-jEn"/>
+                    <connections>
+                        <outlet property="marsImageView" destination="F7b-bf-mtV" id="Tjt-ko-2TB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rqw-FE-csX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426.71755725190837" y="-94.366197183098592"/>
         </scene>
         <!--Root Naviagtion Controller-->
         <scene sceneID="qTj-wc-M2e">

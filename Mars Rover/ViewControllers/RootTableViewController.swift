@@ -11,6 +11,7 @@ import UIKit
 class RootTableViewController: UITableViewController {
     
     var model: RoverPhotoViewModel?
+    static let modalConstant = "FullPhotoSegue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,23 @@ class RootTableViewController: UITableViewController {
         
         return cell
     }
-
+    
+    // MARK: - Navigation
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: Self.modalConstant, sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Self.modalConstant {
+            if let row = sender as? Int,
+               let rover = model?.roverImage(at: row),
+                let fullPhotoController = segue.destination as? FullPhotoViewController {
+                
+                fullPhotoController.rover = rover
+            }
+        }
+    }
 
     // MARK: Helpers
     

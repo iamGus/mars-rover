@@ -27,6 +27,7 @@
 		187E7A252B1F78AD00FD38A6 /* RoverPhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A242B1F78AD00FD38A6 /* RoverPhotoResponse.swift */; };
 		187E7A282B1F863800FD38A6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 187E7A272B1F863800FD38A6 /* Kingfisher */; };
 		187E7A2B2B1F890B00FD38A6 /* RoverPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A2A2B1F890B00FD38A6 /* RoverPhotoCell.swift */; };
+		187E7A2D2B1FAAEC00FD38A6 /* FullPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A2C2B1FAAEC00FD38A6 /* FullPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		187E7A222B1F733000FD38A6 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		187E7A242B1F78AD00FD38A6 /* RoverPhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoResponse.swift; sourceTree = "<group>"; };
 		187E7A2A2B1F890B00FD38A6 /* RoverPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoCell.swift; sourceTree = "<group>"; };
+		187E7A2C2B1FAAEC00FD38A6 /* FullPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				187E7A1D2B1F722000FD38A6 /* RootNavigationController.swift */,
 				187E7A1F2B1F725900FD38A6 /* RootTableViewController.swift */,
+				187E7A2C2B1FAAEC00FD38A6 /* FullPhotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				187E79E82B1F518400FD38A6 /* AppDelegate.swift in Sources */,
 				187E7A252B1F78AD00FD38A6 /* RoverPhotoResponse.swift in Sources */,
 				187E7A132B1F6BF300FD38A6 /* Endpoint.swift in Sources */,
+				187E7A2D2B1FAAEC00FD38A6 /* FullPhotoViewController.swift in Sources */,
 				187E7A1E2B1F722000FD38A6 /* RootNavigationController.swift in Sources */,
 				187E7A182B1F6EA300FD38A6 /* MarsRepository.swift in Sources */,
 				187E7A0A2B1F67AB00FD38A6 /* APIService.swift in Sources */,

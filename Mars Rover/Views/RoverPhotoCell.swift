@@ -38,8 +38,7 @@ class RoverPhotoCell: UITableViewCell {
     }
     
     func configure(with rover: RoverPhoto) {
-        let url = URL(string: rover.photoUrl)
-        marsImageView.kf.setImage(with: url, options: [.transition(.fade(0.2))])
+        marsImageView.kf.setImage(with: rover.photoUrl, options: [.transition(.fade(0.2))])
         cameraTitle.text = rover.camera.fullName
         earthDateLabel.text = rover.earthDate
     }

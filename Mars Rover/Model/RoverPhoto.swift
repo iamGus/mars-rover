@@ -22,15 +22,19 @@ struct RoverPhoto: Codable {
     
     let id: Int
     let sol: Int
-    let earthDate: String
+    let earthDate: String // TODO: Create a Date version
     let camera: RoverCamera
-    let photoUrl: String
+    let photoUrlString: String
     
     enum CodingKeys: String, CodingKey {
         case id, sol, camera
         case earthDate = "earth_date"
-        case photoUrl = "img_src"
+        case photoUrlString = "img_src"
     }
-    
- 
+}
+
+extension RoverPhoto {
+    var photoUrl: URL? {
+        URL(string: photoUrlString)
+    }
 }
