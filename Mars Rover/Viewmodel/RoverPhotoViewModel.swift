@@ -15,7 +15,9 @@ class RoverPhotoViewModel {
     
     init(marsRepository: MarsRepository) {
         self.marsRepository = marsRepository
-        self.roverPhotos = []
+        
+        let rover: [RoverPhoto]? = UserDefaults.standard.retrieveCodable(for: "RoverPhotosData")
+        self.roverPhotos = rover ?? []
     }
     
     /// Gets the latest set of Driver Standings
@@ -27,7 +29,11 @@ class RoverPhotoViewModel {
                 completion(error.errorDescription)
                 
             case .success(let roverPhotos):
-                self.roverPhotos = roverPhotos
+                let shuffledRovers = roverPhotos.shuffled()
+                self.roverPhotos = shuffledRovers
+                // TODO: Use real persistence for data and not UserDefaults!
+                // Also Repository/service would nomraly deal with persistence, not in viewModel
+                UserDefaults.standard.storeCodable(shuffledRovers, key: "RoverPhotosData")
                 completion(nil)
             }
         }
