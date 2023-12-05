@@ -14,6 +14,12 @@
 		187E79F12B1F518500FD38A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187E79F02B1F518500FD38A6 /* Assets.xcassets */; };
 		187E79F42B1F518500FD38A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E79F22B1F518500FD38A6 /* LaunchScreen.storyboard */; };
 		187E7A022B1F612B00FD38A6 /* Mars_RoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A012B1F612B00FD38A6 /* Mars_RoverTests.swift */; };
+		187E7A0A2B1F67AB00FD38A6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A092B1F67AB00FD38A6 /* APIService.swift */; };
+		187E7A0D2B1F682E00FD38A6 /* RoverPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A0C2B1F682E00FD38A6 /* RoverPhoto.swift */; };
+		187E7A0F2B1F6B1400FD38A6 /* MarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A0E2B1F6B1400FD38A6 /* MarsService.swift */; };
+		187E7A112B1F6B6C00FD38A6 /* MarsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A102B1F6B6C00FD38A6 /* MarsAPIService.swift */; };
+		187E7A132B1F6BF300FD38A6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A122B1F6BF300FD38A6 /* Endpoint.swift */; };
+		187E7A152B1F6C4200FD38A6 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A142B1F6C4200FD38A6 /* NetworkConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,12 @@
 		187E79F52B1F518500FD38A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187E79FF2B1F612B00FD38A6 /* Mars RoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mars RoverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187E7A012B1F612B00FD38A6 /* Mars_RoverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mars_RoverTests.swift; sourceTree = "<group>"; };
+		187E7A092B1F67AB00FD38A6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		187E7A0C2B1F682E00FD38A6 /* RoverPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhoto.swift; sourceTree = "<group>"; };
+		187E7A0E2B1F6B1400FD38A6 /* MarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsService.swift; sourceTree = "<group>"; };
+		187E7A102B1F6B6C00FD38A6 /* MarsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsAPIService.swift; sourceTree = "<group>"; };
+		187E7A122B1F6BF300FD38A6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		187E7A142B1F6C4200FD38A6 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,8 @@
 		187E79E62B1F518400FD38A6 /* Mars Rover */ = {
 			isa = PBXGroup;
 			children = (
+				187E7A0B2B1F67EC00FD38A6 /* Model */,
+				187E7A082B1F677D00FD38A6 /* Networking */,
 				187E79E72B1F518400FD38A6 /* AppDelegate.swift */,
 				187E79E92B1F518400FD38A6 /* SceneDelegate.swift */,
 				187E79EB2B1F518400FD38A6 /* ViewController.swift */,
@@ -95,6 +109,26 @@
 				187E7A012B1F612B00FD38A6 /* Mars_RoverTests.swift */,
 			);
 			path = "Mars RoverTests";
+			sourceTree = "<group>";
+		};
+		187E7A082B1F677D00FD38A6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				187E7A092B1F67AB00FD38A6 /* APIService.swift */,
+				187E7A0E2B1F6B1400FD38A6 /* MarsService.swift */,
+				187E7A102B1F6B6C00FD38A6 /* MarsAPIService.swift */,
+				187E7A122B1F6BF300FD38A6 /* Endpoint.swift */,
+				187E7A142B1F6C4200FD38A6 /* NetworkConstants.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		187E7A0B2B1F67EC00FD38A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				187E7A0C2B1F682E00FD38A6 /* RoverPhoto.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187E7A152B1F6C4200FD38A6 /* NetworkConstants.swift in Sources */,
 				187E79EC2B1F518400FD38A6 /* ViewController.swift in Sources */,
 				187E79E82B1F518400FD38A6 /* AppDelegate.swift in Sources */,
+				187E7A132B1F6BF300FD38A6 /* Endpoint.swift in Sources */,
+				187E7A0A2B1F67AB00FD38A6 /* APIService.swift in Sources */,
+				187E7A0D2B1F682E00FD38A6 /* RoverPhoto.swift in Sources */,
+				187E7A0F2B1F6B1400FD38A6 /* MarsService.swift in Sources */,
 				187E79EA2B1F518400FD38A6 /* SceneDelegate.swift in Sources */,
+				187E7A112B1F6B6C00FD38A6 /* MarsAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
