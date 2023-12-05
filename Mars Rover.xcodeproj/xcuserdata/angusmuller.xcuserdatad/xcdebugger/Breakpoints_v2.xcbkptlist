@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "95A106B3-C229-481E-B191-7DB2E7D3C5B2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89D1B897-4AD9-4F82-B18E-DC60545240C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mars Rover/Networking/MarsAPIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchRoverImageData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "89D1B897-4AD9-4F82-B18E-DC60545240C0 - e3b8cd3932511fe4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mars_Rover.MarsAPIService.fetchRoverImageData(completion: (Swift.Result&lt;Swift.Array&lt;Mars_Rover.RoverPhoto&gt;, Mars_Rover.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Mars Rover"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/angusmuller/Desktop/2023%20PackChat/Mars%20Rover/mars-rover/Mars%20Rover/Networking/MarsAPIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "416">
+               </Location>
+               <Location
+                  uuid = "89D1B897-4AD9-4F82-B18E-DC60545240C0 - 801a062183081a57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Decodable) -&gt; Swift.Array&lt;Mars_Rover.RoverPhoto&gt; in Mars_Rover.MarsAPIService.fetchRoverImageData(completion: (Swift.Result&lt;Swift.Array&lt;Mars_Rover.RoverPhoto&gt;, Mars_Rover.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Mars Rover"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/angusmuller/Desktop/2023%20PackChat/Mars%20Rover/mars-rover/Mars%20Rover/Networking/MarsAPIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "588">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "313A3F5C-6909-4681-9EFF-16F63A5B89AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mars Rover/Networking/MarsAPIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchRoverImageData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "313A3F5C-6909-4681-9EFF-16F63A5B89AC - 801a062183081a8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Decodable) -&gt; Swift.Array&lt;Mars_Rover.RoverPhoto&gt; in Mars_Rover.MarsAPIService.fetchRoverImageData(completion: (Swift.Result&lt;Swift.Array&lt;Mars_Rover.RoverPhoto&gt;, Mars_Rover.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Mars Rover"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/angusmuller/Desktop/2023%20PackChat/Mars%20Rover/mars-rover/Mars%20Rover/Networking/MarsAPIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "313A3F5C-6909-4681-9EFF-16F63A5B89AC - 801a062183081a8a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Decodable) -&gt; Swift.Array&lt;Mars_Rover.RoverPhoto&gt; in Mars_Rover.MarsAPIService.fetchRoverImageData(completion: (Swift.Result&lt;Swift.Array&lt;Mars_Rover.RoverPhoto&gt;, Mars_Rover.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Mars Rover"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/angusmuller/Desktop/2023%20PackChat/Mars%20Rover/mars-rover/Mars%20Rover/Networking/MarsAPIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51729927-3D30-44C2-A4D9-CD532C83E9DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mars Rover/Repositories/MarsRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchMarsRoverPhotoData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "51729927-3D30-44C2-A4D9-CD532C83E9DD - 69b83cb4513135e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Mars_Rover.RoverPhoto&gt;, Mars_Rover.APIError&gt;) -&gt; () in Mars_Rover.MarsRepository.fetchMarsRoverPhotoData(completion: (Swift.Result&lt;Swift.Array&lt;Mars_Rover.RoverPhoto&gt;, Mars_Rover.MarsRepositoryError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Mars Rover"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/angusmuller/Desktop/2023%20PackChat/Mars%20Rover/mars-rover/Mars%20Rover/Repositories/MarsRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "51729927-3D30-44C2-A4D9-CD532C83E9DD - 69b83cb4513135c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Mars_Rover.RoverPhoto&gt;, Mars_Rover.APIError&gt;) -&gt; () in Mars_Rover.MarsRepository.fetchMarsRoverPhotoData(completion: (Swift.Result&lt;Swift.Array&lt;Mars_Rover.RoverPhoto&gt;, Mars_Rover.MarsRepositoryError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Mars Rover"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/angusmuller/Desktop/2023%20PackChat/Mars%20Rover/mars-rover/Mars%20Rover/Repositories/MarsRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "808">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "914BF830-6E34-4422-8137-F03864B3F1F5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mars Rover/Networking/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "decodingTask(with:decodingType:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F9FD5587-C785-4439-A752-44E895370947"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mars Rover/Networking/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "decodingTask(with:decodingType:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65A674DB-D924-4E8A-95C8-956D61A4E532"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mars Rover/Networking/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "decodingTask(with:decodingType:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD48C9FF-CDB8-4EBC-9DEB-BBCB2953E3BC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mars Rover/Networking/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "decodingTask(with:decodingType:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

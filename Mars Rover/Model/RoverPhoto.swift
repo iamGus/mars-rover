@@ -8,7 +8,6 @@
 import Foundation
 
 struct RoverPhoto: Codable {
-    
     struct RoverCamera: Codable {
         let name: String
         let fullName: String

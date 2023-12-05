@@ -54,7 +54,8 @@ extension APIService {
                     do {
                         let genericModel = try JSONDecoder().decode(decodingType, from: data)
                          completion(genericModel, nil)
-                    } catch {
+                    } catch let error {
+                        print(error)
                         completion(nil, .jsonConversionFailure)
                     }
                 } else {

@@ -24,10 +24,11 @@ class MarsAPIService: MarsService {
         let request = endpoint.request
         
         fetch(with: request, responseType: RoverPhoto.self, decode: { dataResponse in
-            guard let roverResponse = dataResponse as? [RoverPhoto] else {
+            guard let roverResponse = dataResponse as? RoverPhotoResponse else {
                 return []
             }
-            return roverResponse
+            print(roverResponse.photos.count)
+            return roverResponse.photos
         }, completion: completion)
     }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		187E79E82B1F518400FD38A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E79E72B1F518400FD38A6 /* AppDelegate.swift */; };
 		187E79EA2B1F518400FD38A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E79E92B1F518400FD38A6 /* SceneDelegate.swift */; };
-		187E79EC2B1F518400FD38A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E79EB2B1F518400FD38A6 /* ViewController.swift */; };
 		187E79EF2B1F518400FD38A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E79ED2B1F518400FD38A6 /* Main.storyboard */; };
 		187E79F12B1F518500FD38A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187E79F02B1F518500FD38A6 /* Assets.xcassets */; };
 		187E79F42B1F518500FD38A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E79F22B1F518500FD38A6 /* LaunchScreen.storyboard */; };
@@ -22,6 +21,10 @@
 		187E7A152B1F6C4200FD38A6 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A142B1F6C4200FD38A6 /* NetworkConstants.swift */; };
 		187E7A182B1F6EA300FD38A6 /* MarsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A172B1F6EA300FD38A6 /* MarsRepository.swift */; };
 		187E7A1B2B1F700B00FD38A6 /* RoverPhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A1A2B1F700B00FD38A6 /* RoverPhotoViewModel.swift */; };
+		187E7A1E2B1F722000FD38A6 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A1D2B1F722000FD38A6 /* RootNavigationController.swift */; };
+		187E7A202B1F725900FD38A6 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A1F2B1F725900FD38A6 /* RootTableViewController.swift */; };
+		187E7A232B1F733000FD38A6 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A222B1F733000FD38A6 /* StringExtension.swift */; };
+		187E7A252B1F78AD00FD38A6 /* RoverPhotoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E7A242B1F78AD00FD38A6 /* RoverPhotoResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		187E79E42B1F518400FD38A6 /* Mars Rover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mars Rover.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		187E79E72B1F518400FD38A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187E79E92B1F518400FD38A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		187E79EB2B1F518400FD38A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		187E79EE2B1F518400FD38A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187E79F02B1F518500FD38A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187E79F32B1F518500FD38A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		187E7A142B1F6C4200FD38A6 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		187E7A172B1F6EA300FD38A6 /* MarsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRepository.swift; sourceTree = "<group>"; };
 		187E7A1A2B1F700B00FD38A6 /* RoverPhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoViewModel.swift; sourceTree = "<group>"; };
+		187E7A1D2B1F722000FD38A6 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		187E7A1F2B1F725900FD38A6 /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		187E7A222B1F733000FD38A6 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		187E7A242B1F78AD00FD38A6 /* RoverPhotoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhotoResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,6 @@
 		187E79DB2B1F518400FD38A6 = {
 			isa = PBXGroup;
 			children = (
-				187E7A192B1F6FE500FD38A6 /* Viewmodel */,
 				187E79E62B1F518400FD38A6 /* Mars Rover */,
 				187E7A002B1F612B00FD38A6 /* Mars RoverTests */,
 				187E79E52B1F518400FD38A6 /* Products */,
@@ -95,12 +100,14 @@
 		187E79E62B1F518400FD38A6 /* Mars Rover */ = {
 			isa = PBXGroup;
 			children = (
+				187E7A212B1F731800FD38A6 /* Extensions */,
+				187E7A1C2B1F720800FD38A6 /* ViewControllers */,
+				187E7A192B1F6FE500FD38A6 /* Viewmodel */,
 				187E7A162B1F6E7E00FD38A6 /* Repositories */,
 				187E7A0B2B1F67EC00FD38A6 /* Model */,
 				187E7A082B1F677D00FD38A6 /* Networking */,
 				187E79E72B1F518400FD38A6 /* AppDelegate.swift */,
 				187E79E92B1F518400FD38A6 /* SceneDelegate.swift */,
-				187E79EB2B1F518400FD38A6 /* ViewController.swift */,
 				187E79ED2B1F518400FD38A6 /* Main.storyboard */,
 				187E79F02B1F518500FD38A6 /* Assets.xcassets */,
 				187E79F22B1F518500FD38A6 /* LaunchScreen.storyboard */,
@@ -133,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				187E7A0C2B1F682E00FD38A6 /* RoverPhoto.swift */,
+				187E7A242B1F78AD00FD38A6 /* RoverPhotoResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +159,23 @@
 				187E7A1A2B1F700B00FD38A6 /* RoverPhotoViewModel.swift */,
 			);
 			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		187E7A1C2B1F720800FD38A6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				187E7A1D2B1F722000FD38A6 /* RootNavigationController.swift */,
+				187E7A1F2B1F725900FD38A6 /* RootTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		187E7A212B1F731800FD38A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				187E7A222B1F733000FD38A6 /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,15 +280,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				187E7A152B1F6C4200FD38A6 /* NetworkConstants.swift in Sources */,
-				187E79EC2B1F518400FD38A6 /* ViewController.swift in Sources */,
 				187E79E82B1F518400FD38A6 /* AppDelegate.swift in Sources */,
+				187E7A252B1F78AD00FD38A6 /* RoverPhotoResponse.swift in Sources */,
 				187E7A132B1F6BF300FD38A6 /* Endpoint.swift in Sources */,
+				187E7A1E2B1F722000FD38A6 /* RootNavigationController.swift in Sources */,
 				187E7A182B1F6EA300FD38A6 /* MarsRepository.swift in Sources */,
 				187E7A0A2B1F67AB00FD38A6 /* APIService.swift in Sources */,
 				187E7A0D2B1F682E00FD38A6 /* RoverPhoto.swift in Sources */,
+				187E7A202B1F725900FD38A6 /* RootTableViewController.swift in Sources */,
 				187E7A1B2B1F700B00FD38A6 /* RoverPhotoViewModel.swift in Sources */,
 				187E7A0F2B1F6B1400FD38A6 /* MarsService.swift in Sources */,
 				187E79EA2B1F518400FD38A6 /* SceneDelegate.swift in Sources */,
+				187E7A232B1F733000FD38A6 /* StringExtension.swift in Sources */,
 				187E7A112B1F6B6C00FD38A6 /* MarsAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

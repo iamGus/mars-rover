@@ -33,3 +33,24 @@ class RoverPhotoViewModel {
         }
     }
 }
+
+// MARK: - Standing data
+
+extension RoverPhotoViewModel {
+    func allImages() -> [RoverPhoto]? {
+        return roverPhotos
+    }
+    
+    func roverImage(at index: Int) -> RoverPhoto? {
+        
+        guard index < roverImagesCount() else {
+            return nil
+        }
+        return allImages()?[index]
+    }
+    
+    func roverImagesCount() -> Int {
+        return roverPhotos.count
+    }
+    
+}
