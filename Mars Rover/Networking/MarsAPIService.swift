@@ -23,11 +23,10 @@ class MarsAPIService: MarsService {
         let endpoint = NasaEndpoint.imageSearchByRover(rover: "curiosity")
         let request = endpoint.request
         
-        fetch(with: request, responseType: RoverPhoto.self, decode: { dataResponse in
+        fetch(with: request, responseType: RoverPhotoResponse.self, decode: { dataResponse in
             guard let roverResponse = dataResponse as? RoverPhotoResponse else {
                 return []
             }
-            print(roverResponse.photos.count)
             return roverResponse.photos
         }, completion: completion)
     }

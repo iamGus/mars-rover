@@ -11,7 +11,7 @@ struct RoverPhoto: Codable {
     struct RoverCamera: Codable {
         let name: String
         let fullName: String
-        var roverID: [Int]
+        var roverID: Int
         
         enum CodingKeys: String, CodingKey {
             case name
@@ -27,10 +27,8 @@ struct RoverPhoto: Codable {
     let photoUrl: String
     
     enum CodingKeys: String, CodingKey {
-        case id
-        case sol
+        case id, sol, camera
         case earthDate = "earth_date"
-        case camera
         case photoUrl = "img_src"
     }
     
