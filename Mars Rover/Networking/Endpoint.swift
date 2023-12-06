@@ -87,7 +87,6 @@ extension NasaEndpoint: Endpoint {
                 return [
                     URLQueryItem(name: "api_key", value: apiKey),
                     URLQueryItem(name: "sol", value: "1000")
-                   // URLQueryItem(name: "page", value: "1")
                 ]
             }
         }

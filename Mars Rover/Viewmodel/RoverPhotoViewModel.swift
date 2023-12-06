@@ -20,7 +20,6 @@ class RoverPhotoViewModel {
         self.roverPhotos = rover ?? []
     }
     
-    /// Gets the latest set of Driver Standings
     func refresh(completion: @escaping (_ errorMessage: String?) -> ()) {
         
         marsRepository.fetchMarsRoverPhotoData { result in
@@ -31,8 +30,8 @@ class RoverPhotoViewModel {
             case .success(let roverPhotos):
                 let shuffledRovers = roverPhotos.shuffled()
                 self.roverPhotos = shuffledRovers
-                // TODO: Use real persistence for data and not UserDefaults!
-                // Also Repository/service would nomraly deal with persistence, not in viewModel
+                // TODO: Use better persistence for data and not UserDefaults!
+                // Also Repository/service would normally deal with persistence, not in viewModel
                 UserDefaults.standard.storeCodable(shuffledRovers, key: "RoverPhotosData")
                 completion(nil)
             }
@@ -58,5 +57,4 @@ extension RoverPhotoViewModel {
     func roverImagesCount() -> Int {
         return roverPhotos.count
     }
-    
 }

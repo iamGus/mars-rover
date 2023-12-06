@@ -32,7 +32,6 @@ enum APIError: Error {
 protocol APIService {
     var session: URLSession { get }
     
-    
     func fetch<T: Decodable, Y: Decodable>(with request: URLRequest, responseType: Y.Type, decode: @escaping (Decodable) -> [T], completion: @escaping (Result<[T], APIError>) -> Void)
 }
 
